@@ -98,25 +98,52 @@ color:blue;}
 </head>
 
 <body>
-  <div class="header">
-    <div class="nav">
-        <div class="logo">
-            <img src="./images/DSCIP LOGO.png" alt="Logo">
-        </div>
-        <div class="hamburger" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Gallery</a>
-            <a href="#">Course</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-            <a href="#" class="special-button">Syllabus</a>
-        </div>
+  <div class="header">  
+        <header class="header_section" styel="background-color:#00204a !important; z-index:1000;">
+          <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+              <a class="navbar-brand" href="index.html">
+                <span>
+                  <img src="./images/DSCIP LOGO.png" alt="" style="width:100px;height:50px;">
+                </span>
+              </a>
+    
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class=""> </span>
+              </button>
+    
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  ">
+                  <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home </a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="about.html"> Job <span class="sr-only">(current)</span> </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Course</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="why.html">Gallery</a>
+                  </li>
+                 
+                  <li class="nav-item">
+                    <a class="nav-link" href="./blog.html">Blog</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                  </li> 
+    
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contactus.html">Contact</a>
+                  </li>
+                  <a href="#" class="special-button">Syllabus</a>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </header>
     </div>
     <div class="content">
         <h1>Data Science Course in Pune</h1>
@@ -127,17 +154,7 @@ color:blue;}
         </div>
     </div>
 </div>
-<script>
-    function toggleMenu() {
-        document.querySelector('.nav').classList.toggle('active');
-        const content = document.querySelector('.content');
-        if (document.querySelector('.nav').classList.contains('active')) {
-            content.style.top = 'calc(100vh - ' + document.querySelector('.nav-links').offsetHeight + 'px)';
-        } else {
-            content.style.top = '50%';
-        }
-    }
-</script>
+
 
 
 
