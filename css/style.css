@@ -15,143 +15,148 @@ html {
 
 /* whats app image........... */
 body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 .header {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url('../images/gallery/gallery-img-3.jpg') no-repeat center center/cover;
-    color: white;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('../images/gallery/gallery-img-3.jpg') no-repeat center center/cover;
+  color: white;
 }
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    position: relative;
-    z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: relative;
+  z-index: 2;
 }
 .nav .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+
 }
 .nav .logo img {
-    height: 40px;
-    margin-left: 75px;
+  height: 40px;
+  left: 50px;
+  bottom: 90px;
+  
 }
 .nav .nav-links {
-    display: flex;
-    align-items: center;
+  display: flex;
+  justify-content: center; /* Center the items */
+  align-items: center;
+  flex-grow: 1; /* Allow the links to take up remaining space */
 }
 .nav .nav-links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  margin: 0 25px;
 }
 .nav .nav-links .special-button {
-    background-color: white;
-    color: black;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+  background-color: white;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 .nav .nav-links .special-button:hover {
-    background-color: lightgray;
+  background-color: lightgray;
 }
 .hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
 }
 .hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
 }
 .content {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    text-align: left;
-    z-index: 1;
-    transition: top 0.3s ease;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  text-align: left;
+  z-index: 1;
+  transition: top 0.3s ease;
 }
 .content h1 {
-    font-size: 3em;
-    margin: 0px;
-    color: #37B7C3;
+  font-size: 3em;
+  margin: 0px;
+  color: #37B7C3;
 }
 .content h3 {
-    font-size: 1.5em;
-    margin: 10px 0;
+  font-size: 1.5em;
+  margin: 10px 0;
 }
 .buttons {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 .buttons a {
-    padding: 15px 25px;
-    margin: 0 10px;
-    border: none;
-    color: white;
-    text-decoration: none;
-    font-size: 1em;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+  padding: 15px 25px;
+  margin: 0 10px;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 .whatsapp {
-    background-color: green;
+  background-color: green;
 }
 .whatsapp:hover {
-    background-color: darkgreen;
+  background-color: darkgreen;
 }
 .enroll {
-    background-color: blue;
+  background-color: blue;
 }
 .enroll:hover {
-    background-color: darkblue;
+  background-color: darkblue;
 }
 @media (max-width: 768px) {
-    .nav .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: black;
-        position: absolute;
-        top: 60px;
-        left: 0;
-    }
-    .nav .nav-links a {
-        margin: 15px 0;
-        padding: 10px 0;
-        text-align: center;
-        width: 100%;
-    }
-    .nav .nav-links .special-button {
-        margin: 15px;
-    }
-    .hamburger {
-        display: flex;
-    }
-    .nav.active .nav-links {
-        display: flex;
-    }
-    .content {
-        top: calc(60px + 15px); /* Adjust based on the navbar height and spacing */
-        transform: none;
-    }
-    .content h1 {
-        font-size: 2em;
-    }
-    .buttons a {
-        padding: 10px 15px;
-        font-size: 0.8em;
-    }
-    
+  .nav .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: black;
+      position: absolute;
+      top: 60px;
+      left: 0;
+  }
+  .nav .nav-links a {
+      margin: 15px 0;
+      padding: 10px 0;
+      text-align: center;
+      width: 100%;
+  }
+  .nav .nav-links .special-button {
+      margin: 15px;
+  }
+  .hamburger {
+      display: flex;
+  }
+  .nav.active .nav-links {
+      display: flex;
+  }
+  .content {
+      top: calc(60px + 15px); /* Adjust based on the navbar height and spacing */
+      transform: none;
+  }
+  .content h1 {
+      font-size: 2em;
+  }
+  .buttons a {
+      padding: 10px 15px;
+      font-size: 0.8em;
+  }
+  
 }
 
 /* whatsapp div end */
