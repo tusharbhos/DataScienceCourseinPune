@@ -12,12 +12,13 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
-  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
-  <title>Blog</title>
+  <title> Finexo </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -33,21 +34,29 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="sub_page">
 
-  <div class="hero_area blog-hero-area" style="padding-top: 6rem !important;">
+  <div class="hero_area">
 
-    
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/hero-bg.png" alt="">
+      </div>
+    </div>
 
     <!-- header section strats -->
-    <header class="header_section blog-header">
+    <header class="header_section" styel="background-color:#00204a !important; z-index:1000;">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
-            <img class="logo-dscip" src="./images/DSCIP LOGO.png" alt="logo"/>
-           </a>
+            <span>
+              <img src="./images/DSCIP LOGO.png" alt="" style="width:100px;height:50px;">
+            </span>
+          </a>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
@@ -57,25 +66,54 @@
             <ul class="navbar-nav  ">
               <li class="nav-item ">
                 <a class="nav-link" href="index.html">Home </a>
-              </li> 
-              <li class="nav-item active">
-                <a class="nav-link" href="./blog.html"> Blog <span class="sr-only">(current)</span></a>
               </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="about.html"> Job <span class="sr-only">(current)</span> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Course</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="why.html">Gallery</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="./blog.html">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li> 
+
+              <li class="nav-item">
+                <a class="nav-link" href="./contactus.html">Contact</a>
+              </li>
+              <a href="#" class="special-button">Enroll now</a>
             </ul>
           </div>
         </nav>
       </div>
     </header>
     <!-- end header section -->
+  </div>
+
+
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding" id="about">
+    <div class="container"><br><br>
+      <div class="heading_container heading_center" >
+        <h2>
+          Our <span> Blogs</span>
+        </h2>
+        <p>
+          Our blogs in data science 
+        </p>
+      </div>
+      
     </div>
-    <div class="heading_container heading_center">
-      <h2>
-     Blogs
-      </h2>
-      <p>
-       Our blogs in data science 
-      </p>
-    </div>
+  </section><br>
 <section class="m-4">
   <div class="container-fluid ">
     <div class="row">
@@ -119,16 +157,19 @@
               <a class="read-more" href="./Understanding-generative-ai.html">Read more..</a></div>
 
               <!-- blog-5................... -->
-          <!-- <div class="blog-card"><h4>Why Data Science is Important for You</h4>
+          <div class="blog-card">
+            <img class="blog-image" src="./images/blogs/blog-4-img.jpg" alt="blog-2"/>
+            <h4>Why Data Science is Important for You</h4>
             <p>In today&#39;s rapidly evolving technological landscape, data science stands out as a pivotal field that drives
               innovation .</p>
-             <a class="read-more">Read more..</a></div> -->
+             <a class="read-more">Read more..</a></div>
 
               <!-- blog-6................... -->
-          <!-- <div class="blog-card"><h4>Why Data Science is Important for You</h4>
+          <div class="blog-card"><img class="blog-image" src="./images/blogs/blog-4-img.jpg" alt="blog-2"/>
+            <h4>Why Data Science is Important for You</h4>
             <p>In today&#39;s rapidly evolving technological landscape, data science stands out as a pivotal field that drives
               innovation .</p>
-             <a class="read-more">Read more..</a></div> -->
+             <a class="read-more">Read more..</a></div>
 
               <!-- blog-7................... -->
           <!-- <div class="blog-card"><h4>Why Data Science is Important for You</h4>
@@ -150,10 +191,11 @@
  
 </section>
 
-<section class="info_section layout_padding2">
+<!-- footer..................................... -->
+<section class="info_section layout_padding2 mt-4">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-lg-4 info_col">
+      <div class="col-md-6 col-lg-3 info_col">
         <div class="info_contact">
           <h4>
             Address
@@ -162,24 +204,37 @@
             <a href="">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
               <span>
-                office no 202, above Jijamata bank, Karve Nagar, Pune, Maharashtra 411052
+                Location
               </span>
             </a>
             <a href="">
               <i class="fa fa-phone" aria-hidden="true"></i>
               <span>
-                Call 8080152238
+                Call +01 1234567890
               </span>
             </a>
             <a href="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <span>
-                datasciencecourseinpune@gmail.com
+                demo@gmail.com
               </span>
             </a>
           </div>
         </div>
-       
+        <div class="info_social">
+          <a href="">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
       </div>
       <div class="col-md-6 col-lg-3 info_col">
         <div class="info_detail">
@@ -187,7 +242,7 @@
             Info
           </h4>
           <p>
-            Discover your potential by enrolling in a data science course in Pune, where you may gain access to all the resources you need to become an expert programmer in data science.
+            necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
           </p>
         </div>
       </div>
@@ -200,66 +255,56 @@
             <a class="active" href="index.html">
               Home
             </a>
-            <a href="./blog.html">
-              Blog
+            <a class="" href="about.html">
+              About
+            </a>
+            <a class="" href="service.html">
+              Services
+            </a>
+            <a class="" href="why.html">
+              Why Us
+            </a>
+            <a class="" href="team.html">
+              Team
             </a>
           </div>
         </div>
       </div>
       <div class="col-md-6 col-lg-3 info_col ">
-        
-          <h4 class="text-center">
-          Follow us
-          </h4>
-          <div class="info_social">
-            <a href="">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-          </div>
-      
+        <h4>
+          Subscribe
+        </h4>
+        <form action="#">
+          <input type="text" placeholder="Enter email" />
+          <button type="submit">
+            Subscribe
+          </button>
+        </form>
       </div>
     </div>
   </div>
-  <section class="footer_section">
-    <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="www.datasciencecourseinpune.in">Data Science Course in Pune</a>
-      </p>
-    </div>
-  </section>
 </section>
-  <!-- end info section -->
 
-  <!-- footer section -->
- 
-  <!-- footer section -->
+<!-- end info section -->
 
-  <!-- jQery -->
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <!-- bootstrap js -->
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <!-- owl slider -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-  <!-- custom js -->
-  <script type="text/javascript" src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
+
+
+<!-- jQery -->
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<!-- popper js -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<!-- bootstrap js -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!-- owl slider -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+</script>
+<!-- custom js -->
+<script type="text/javascript" src="js/custom.js"></script>
+<!-- Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+</script>
+<!-- End Google Map -->
 
 </body>
 
